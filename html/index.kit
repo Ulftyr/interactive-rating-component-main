@@ -1,18 +1,76 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dist/css/style.min.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <!-- @include 'links.kit' -->
+    <style>
+        .attribution {
+            position: fixed;
+            bottom: 0;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 
 <body>
-    <!-- @include 'nav.kit' -->
-    <h1>Hello world!!!</h1> 
-    <!-- @include 'footer.kit' -->
+
+    <!-- Rating state start -->
+    <main>
+        <div class="card front-card">
+            <div class="card__shadow-star">
+                <img class="card__img" src="dist/img/icon-star.svg" alt="">
+            </div>
+            <h1 class="card__header">How did we do?</h1>
+            <p class="card__text">
+                Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!
+            </p>
+            <div class="card__review">
+                <div class="card__review-item">1</div>
+                <div class="card__review-item">2</div>
+                <div class="card__review-item">3</div>
+                <div class="card__review-item">4</div>
+                <div class="card__review-item">5</div>
+            </div>
+            <button class="card__submit">Submit</button>
+        </div>
+        <div class="not reverse-card">
+            <img class="card__img-second" src="dist/img/illustration-thank-you.svg" alt="">
+            <p class="card__your-review">
+                You selected <span class="choice"></span> out of 5
+            </p>
+
+            <h2 class="card__header">Thank you!</h2>
+
+            <p class="card__text card__second-text">
+                We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+    </main>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+
+
+
+    <!-- Thank you state end -->
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Ulftyr">Marcin Ulftyr Zioła</a>.
+    </div>
+    <!-- @include '_scripts.kit' -->
 </body>
 
 </html>
