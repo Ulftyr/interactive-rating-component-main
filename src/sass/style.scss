@@ -60,6 +60,7 @@ body {
 			border-radius: 50%;
 			color: $medium-grey;
 			background-color: $dark-blue-light;
+			cursor: pointer;
 		}
 	}
 	&__submit {
@@ -71,6 +72,7 @@ body {
 		color: $white;
 		border: none;
 		background-color: $primary;
+		cursor: pointer;
 		&:active {
 			background-color: $white;
 			color: $primary;
@@ -95,4 +97,9 @@ body {
 .reverse-card {
 	align-items: center;
 	padding: 2em 1.5em;
+}
+
+.clicked {
+	background-color: $ligh-grey;
+	color: $white;
 }
